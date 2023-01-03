@@ -7,7 +7,7 @@ function Instructors() {
       <div className="bg-primary p-5 ">
          <div className="container text-center ">
             <h3 className="text-light">Our instructors</h3>
-            <p className="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, magni.</p>
+            <p className="text-light">We have instructors all over the world with the highest expertise</p>
             <div className="row ">
                <Instructor text="Frontend expert" avatarNum={randomNum()} title="Larry White" />
                <Instructor text="Backend master" avatarNum={randomNum()} title="Vonheim Chavez" />
