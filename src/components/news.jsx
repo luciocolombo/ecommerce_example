@@ -7,8 +7,15 @@ function News() {
             <h2 className="text-light">Subscribe to get special discounts</h2>
 
             <div className="input-group news-input">
-               <input type="text" className="form-control" placeholder="Email" aria-label="Email" aria-describedby="button-addon2" />
-               <button className="btn btn-dark btn-lg" type="button" id="button-addon2">
+               <input
+                  id="emailSubscribe"
+                  type="text"
+                  className="form-control"
+                  placeholder="Email"
+                  aria-label="Email"
+                  aria-describedby="button-addon2"
+               />
+               <button className="btn btn-dark btn-lg" type="button" id="button-addon2" onClick={handleSubmit}>
                   Subscribe
                </button>
             </div>
@@ -17,4 +24,8 @@ function News() {
    );
 }
 
+function handleSubmit() {
+   if (!document.getElementById("emailSubscribe").value) return;
+   window.$(".toast").toast("show");
+}
 export default News;

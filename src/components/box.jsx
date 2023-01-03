@@ -1,6 +1,6 @@
 import React from "react";
 
-function box(props) {
+function Box(props) {
    const { title, text, button, greyStyle, icon } = props;
    return (
       <div className="col-md mb-3 mx-2 mx-sm-0">
@@ -11,7 +11,12 @@ function box(props) {
                <p className="card-text p-2">
                   {text || "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores aut consectetur a natus laborum iusto!"}
                </p>
-               <a href="#a" className={`btn p-2 mb-3 ${greyStyle ? "btn-dark" : "btn-primary"}`}>
+               <a
+                  href="#a"
+                  className={`btn p-2 mb-3 ${greyStyle ? "btn-dark" : "btn-primary"}`}
+                  data-bs-toggle="modal"
+                  data-bs-target="#enroll"
+               >
                   {button}
                </a>
             </div>
@@ -20,4 +25,4 @@ function box(props) {
    );
 }
 
-export default box;
+export default Box;

@@ -39,7 +39,7 @@ function Faq() {
                </h2>
                <div id="panelsStayOpen-collapseTwo" className="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
                   <div className="accordion-body">
-                     <strong>Taks are usually charged on a horly base.</strong> This is the most transparent way we found to avoid tasks
+                     <strong>Taks are usually charged on a hourly base.</strong> This is the most transparent way we found to avoid tasks
                      becoming too large to handle in the expected timeframe
                   </div>
                </div>
@@ -59,7 +59,7 @@ function Faq() {
                </h2>
                <div id="panelsStayOpen-collapseThree" className="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
                   <div className="accordion-body">
-                     <strong>We have many references</strong> We respect our customer's privacy, so we only give their details in a case by
+                     <strong>We have many references.</strong> We respect our customer's privacy, so we only give their details in a case by
                      case basis.
                   </div>
                </div>

@@ -14,10 +14,10 @@ function Learn() {
                   satisfaction.
                </p>
                <p>Our satisfaction rate is 100%</p>
-               <a href="#3" className="btn btn-light">
+               {/*   <a href="#3" className="btn btn-light">
                   <i className="bi bi-chevron-right"></i>
                   Read more
-               </a>
+               </a> */}
             </div>
          </div>
       </div>

@@ -15,17 +15,14 @@ function instructor(props) {
                {text || "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe atque perspiciatis adipisci ex eos."}
             </div>
             <div className="pt-3">
-               <a href="#2">
+               <a href="https://www.facebook.com">
                   <i className="bi bi-facebook px-1"></i>
                </a>
-               <a href="#3">
+               <a href="https://www.instagram.com">
                   <i className="bi bi-instagram  px-1"></i>
                </a>
-               <a href="#4">
+               <a href="https://www.google.com">
                   <i className="bi bi-google  px-1"></i>
-               </a>
-               <a href="#54">
-                  <i className="bi bi-align-middle  px-1"></i>
                </a>
             </div>
          </div>

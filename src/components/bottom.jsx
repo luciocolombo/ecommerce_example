@@ -10,7 +10,7 @@ function Bottom() {
                   <h3>We work with all web technologies</h3>
                   <p>Do you have a favourite framework to choose from? Just tell us.</p>
                   <p>You do not have technical knowledge? That is good too. Leave everything to us</p>
-                  <a href="#4" className="btn btn-light">
+                  <a href="#4" className="btn btn-light" data-bs-toggle="modal" data-bs-target="#enroll">
                      <i className="bi bi-chevron-right"></i>
                      Contact us
                   </a>

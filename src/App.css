@@ -19,3 +19,8 @@ body::before{
     background-color: lightblue;
     border-radius: 10px;
 }
+
+.toast{
+    position:absolute;
+    z-index:5;
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import Instructor from "./instructor";
+import Instructor from "./Instructor";
 
 function Instructors() {
    const randomNum = () => Math.floor(Math.random() * 100);
