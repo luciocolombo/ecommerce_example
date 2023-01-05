@@ -2,11 +2,6 @@
     min-width: 20em;
 }
 
-@media(min-width:768px){
-    .news-input{
-        width:50%!important;
-    }
-}
 
 body::before{
     content:'';
@@ -24,3 +19,23 @@ body::before{
     position:absolute;
     z-index:5;
 }
+
+#signupNavbar, #signinNavbar{
+    width: 130px;
+}
+
+@media(min-width:768px){
+    .news-input{
+        width:50%!important;
+    }
+    
+}
+/* 
+@media(min-width:991px){
+
+    #signup, #signin{
+        display:none!important;
+    }
+}
+
+ */

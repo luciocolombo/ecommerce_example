@@ -1,6 +1,8 @@
 import React from "react";
 import avatar from "../images/avatar.jpg";
 import EnrollModal from "./EnrollModal";
+import SignupModal from "./SignupModal";
+
 function Showcase() {
    return (
       <section className="bg-dark text-light p-5">
@@ -11,10 +13,28 @@ function Showcase() {
                      We offer a wide range of <span className="text-warning">Progamming solutions</span>
                   </h1>
                   <p>Let our professionals handle your software needs. We have the best price and customer service.</p>
-                  <button className="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">
+                  {/*  <button className="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">
                      Contact us
-                  </button>
+                  </button> */}
                   <EnrollModal />
+                  <button
+                     id="signin"
+                     className="btn btn-primary m-1 btn-lg d-block w-100 mt-3"
+                     data-bs-toggle="modal"
+                     data-bs-target="#signinModal"
+                  >
+                     Sign in
+                  </button>
+
+                  <button
+                     id="signup"
+                     className="btn btn-secondary m-1 btn-lg d-block w-100"
+                     data-bs-toggle="modal"
+                     data-bs-target="#signupModal"
+                  >
+                     Sign up
+                  </button>
+                  <SignupModal />
                </div>
                <img className="w-25 d-md-block d-none img" src={avatar} alt="dev" />
             </div>
