@@ -1,9 +1,17 @@
-import { React, useState } from "react";
+import { React, useState, useEffect } from "react";
 import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function SignupModal() {
    const [username, setUsername] = useState("");
    const [password, setPassword] = useState("");
+
+   useEffect(() => {
+      setUsername("");
+      setPassword("");
+      return;
+   }, []);
 
    async function handleSignup() {
       const user = {
@@ -12,8 +20,13 @@ function SignupModal() {
             password,
          },
       };
-      console.log(await axios.post("http://localhost:4000/user", user));
+      axios.post("http://localhost:4000/user", user).then(showToast);
    }
+
+   function showToast(response) {
+      response.data?.createdAt ? toast("Success") : toast(response.data);
+   }
+
    return (
       <div className="modal fade text-dark" id="signupModal" tabIndex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
          <div className="modal-dialog">
@@ -58,6 +71,7 @@ function SignupModal() {
                </div>
             </div>
          </div>
+         <ToastContainer autoClose={2000} />
       </div>
    );
 }

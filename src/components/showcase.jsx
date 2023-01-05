@@ -2,6 +2,7 @@ import React from "react";
 import avatar from "../images/avatar.jpg";
 import EnrollModal from "./EnrollModal";
 import SignupModal from "./SignupModal";
+import SigninModal from "./SigninModal";
 
 function Showcase() {
    return (
@@ -17,24 +18,28 @@ function Showcase() {
                      Contact us
                   </button> */}
                   <EnrollModal />
-                  <button
-                     id="signin"
-                     className="btn btn-primary m-1 btn-lg d-block w-100 mt-3"
-                     data-bs-toggle="modal"
-                     data-bs-target="#signinModal"
-                  >
-                     Sign in
-                  </button>
+                  <div style={{ display: localStorage.getItem("auth") ? "none" : "" }}>
+                     <button
+                        id="signin"
+                        className="btn btn-primary m-1 btn-lg d-block w-100 mt-3"
+                        data-bs-toggle="modal"
+                        data-bs-target="#signinModal"
+                     >
+                        Sign in
+                     </button>
 
-                  <button
-                     id="signup"
-                     className="btn btn-secondary m-1 btn-lg d-block w-100"
-                     data-bs-toggle="modal"
-                     data-bs-target="#signupModal"
-                  >
-                     Sign up
-                  </button>
+                     <button
+                        id="signup"
+                        className="btn btn-secondary m-1 btn-lg d-block w-100"
+                        data-bs-toggle="modal"
+                        data-bs-target="#signupModal"
+                     >
+                        Sign up
+                     </button>
+                  </div>
+
                   <SignupModal />
+                  <SigninModal />
                </div>
                <img className="w-25 d-md-block d-none img" src={avatar} alt="dev" />
             </div>
