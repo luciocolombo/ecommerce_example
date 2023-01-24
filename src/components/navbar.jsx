@@ -11,7 +11,16 @@ function Navmenu() {
                <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navmenu">
-               <ul className="navbar-nav ms-auto">
+               <ul className="navbar-nav ms-auto ">
+                  <div style={{ display: localStorage.getItem("auth") ? "" : "none" }}>
+                     <div style={{ marginTop: "5px" }} className="h4 btn btn-success btn-sm align-self-center">
+                        <i class="bi bi-person-circle "></i> Welcome {localStorage.getItem("username")}
+                     </div>
+                     <div className="btn btn-danger btn-sm align-self-center" onClick={logout}>
+                        <i class="bi bi-door-closed"></i>
+                     </div>
+                  </div>
+
                   <li className="nav-item">
                      <a href="#news" className="nav-link">
                         About us
@@ -34,4 +43,9 @@ function Navmenu() {
    );
 }
 
+function logout() {
+   localStorage.removeItem("auth");
+   localStorage.removeItem("name");
+   window.location.reload();
+}
 export default Navmenu;
